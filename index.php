@@ -36,6 +36,35 @@ $dischi = json_decode($json_text, true);
                 }
             ?>
     </div>
+    <div class="card w-75 m-3 mb-5 mx-auto p-3 bg-secondary text-white d-flex flex-column">
+        <h2>aggiungi il tuo brano</h2>
+        <form action="server.php" method="POSt" class="px-5 py-3 bg-secondary text-white d-flex flex-column gap-3 fs-3">
+            
+            <!-- titolo -->
+            <label for="titolo">Titolo</label>
+            <input type="text" class="form-text" id="titolo" name="titolo" required>
+
+            <!-- artista -->
+            <label for="artista">artista</label>
+            <input type="text" class="form-text" id="artista" name="artista" required>
+
+            <!-- cover -->
+            <label for="cover">cover</label>
+            <input type="text" class="form-text" id="cover" name="cover" required>
+
+            <!-- anno -->
+            <label for="anno">anno</label>
+            <input type="text" class="form-text" id="anno" name="anno" required>
+
+            <!-- genere -->
+            <label for="genere">genere</label>
+            <input type="text" class="form-text" id="genere" name="genere" required>
+
+            <button class="mt-4 btn btn-success">invia</button>
+
+        </form>
+
+    </div>
     
 </body>
 </html>
